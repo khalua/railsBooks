@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookr</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav>
+  <%= link_to("All Books", books_path) %>
+  <%= link_to("New Book", new_book_path) %>
+  <%= link_to("All Authors", authors_path) %>
+  <%= link_to("New Author", new_author_path) %>
+</nav>
+
+
+<%= yield %>
+
+</body>
+</html>

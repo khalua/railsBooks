@@ -1,0 +1,6 @@
+<%= @book.title %><br>
+<%= @book.published_date %><br>
+<%= link_to('Edit', edit_book_path(@book)) %>
+<%= link_to 'Delete', @book, :method => :delete, :confirm => "You sure?" %>
+<%= link_to("Amazon Link", @book.amazon_link) %><br>
+<%= image_tag(@book.image) %><br>

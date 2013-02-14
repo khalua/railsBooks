@@ -1,0 +1,14 @@
+<%= form_for @book do |f| %>
+<%= f.label :author_id %>
+<%= f.select :author_id, Author.all.map {|author| [author.name, author.id]}, :include_blank => true, :prompt => "Select Author" %>
+<br>
+<%= f.text_field :title %>
+<%= f.label :title %><br>
+<%= f.text_field :published_date %>
+<%= f.label :published_date %><br>
+<%= f.text_field :image %>
+<%= f.label :image %><br>
+<%= f.text_field :amazon_link %>
+<%= f.label :amazon_link %><br>
+<%= f.submit %>
+<% end %>

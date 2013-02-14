@@ -1,0 +1,7 @@
+<% @books.each do |book| %>
+  Title:  <%= link_to book.title, book %><br>
+  Published Date: <%= book.published_date %><br>
+  <%= link_to('Amazon Link',book.amazon_link) %><br>
+  <%= image_tag(book.image, :size => "175x200") %><br>
+  <hr>
+<% end %>

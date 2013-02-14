@@ -1,0 +1,6 @@
+<% @authors.each do |author| %>
+  Name:  <%= link_to author.name, author %><br>
+  DOB:  <%= author.dob %><br>
+  <%= image_tag(author.image, :size => "175x200") %><br>
+  <hr>
+<% end %>

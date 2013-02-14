@@ -1,0 +1,5 @@
+<%= @author.name %><br>
+<%= @author.dob %><br>
+<%= link_to 'Edit', edit_author_path(@author) %>
+<%= link_to 'Delete', @author, :method => :delete, :confirm => "You sure?" %>
+<%= image_tag(@author.image) %><br>
